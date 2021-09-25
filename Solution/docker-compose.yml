@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+    oc-jupyter-notebook:
+        container_name: oc-jupyter-notebook
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        restart: always
+        volumes:
+          - ./script:/app/script
+        command: jupyter notebook --ip 0.0.0.0 --no-browser --allow-root --NotebookApp.token='superPassword1234'
+        ports:
+          - "8888:8888"
+        networks:
+            - jupyter-network
+            
+networks:
+    jupyter-network:
+        driver: bridge
