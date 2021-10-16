@@ -10,3 +10,9 @@ plotly
 flask
 notebook
 pyarrow
+sklearn
+seaborn
+spacy
+opencv-contrib-python
+gensim
+pyLDAvis

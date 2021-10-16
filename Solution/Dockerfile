@@ -9,6 +9,8 @@ WORKDIR $APP_HOME
 COPY . ./
 
 RUN ls -la $APP_HOME/
+RUN apt-get update
+RUN apt-get install ffmpeg libsm6 libxext6  -y
 
 # Install dependencies
 RUN pip install -r requirements.txt
