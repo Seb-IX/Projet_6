@@ -4,7 +4,7 @@ This project will allow the implementation of automatic classification algorithm
 
 # Jupyter nb_wiewer :
 
-to insert...
+<a href="https://nbviewer.org/github/Seb-IX/Projet_6/blob/main/Solution/script/P06_synthese.ipynb" target="_blank">synthesis project notebook here</a>
 
 # Requierement :
 
