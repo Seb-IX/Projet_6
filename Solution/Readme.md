@@ -27,9 +27,11 @@ and run the command line => `docker-compose up -d`
 
 # Files content :
 
-This project is composed in 5 notebooks:
-- Analysis and merging of primary unzipped files (json)
-- Creation of the NLP model
-- The creation of the CV model
-- A summary file of the results
-- A dashborard
+The main file is `P06_synthese.ipynb`<br>
+<br>
+This project is composed in 4 notebooks and 1 dashborard:
+- Analysis and merging of primary unzipped files (json) `P06_analyse.ipynb`
+- Creation of the NLP model `P06_nlp.ipynb`
+- The creation of the CV model `P06_computer_vision.ipynb`
+- A summary file of the results `P06_synthese.ipynb`
+- A dashborard `A faire...`
