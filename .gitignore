@@ -2,3 +2,7 @@
 /Solution/script/archive/**
 /Solution/script/token.txt
 /Ressource/Data/**
+/dahboard_voila/script/data/**
+**/.vscode/**
+**/.ipynb_checkpoints/**
+**/__pycache__/**

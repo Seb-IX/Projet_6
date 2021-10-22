@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+
+{% block head %} 
+<style>
+    body { background-color: #30303d; color: #fff; }
+    .jumbotron{ color:black;}
+</style>
+{%endblock%}
+
+
+
+
+
+{% block body %}
+
+<div class="container-fluid">
+    <h1>Prédiction d'image</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="file_id">Choisir une image</label>
+            <div class="custom-file">
+                <input type="file" name="file" class="custom-file-input" id="file_id">
+                <label class="custom-file-label" for="file_id"> nourriture, boisson, menu, intérieur ou extérieur de restaurant</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Soumettre</button>
+    </form>
+    <br><br>
+    {% if sended == True %}
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+        <h1 class="display-4">Prédiction</h1>
+        <p class="lead">
+            {% for pred in result["predictions"]: %}
+                <b>{{pred["label"]}}</b> - {{pred["probability"]}}<br>
+            {% endfor %}
+        </p>
+        </div>
+    </div>
+    {% endif %}
+
+</div>
+
+{%endblock%}
+
+
+
+
+
+{% block script %}
+<script>
+
+$(".custom-file-input").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+});
+
+</script>
+
+{%endblock%}

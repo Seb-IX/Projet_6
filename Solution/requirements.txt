@@ -16,3 +16,4 @@ spacy
 opencv-contrib-python
 gensim
 pyLDAvis
+wordcloud

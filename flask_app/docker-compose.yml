@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+    oc-dashboard:
+        container_name: oc-dashboard
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        restart: always
+        volumes:
+          - ./script:/app/script
+        command: python /app/script/run.py
+        ports:
+          - "8080:8080"
+        networks:
+            - dashboard
+            
+networks:
+    dashboard:
+        driver: bridge

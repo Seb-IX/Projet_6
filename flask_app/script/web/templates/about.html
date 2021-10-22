@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+
+{% block head %} 
+<style>
+    body { background-color: #30303d; color: #fff; }
+</style>
+{%endblock%}
+
+{% block body %}
+
+<div class="container" style="text-align: center;">
+    <h2>Projet :</h2>
+    <br>
+    <p>
+        Ce projet à été réalisé dans le cadre de ma formation <a href="https://openclassrooms.com/fr/paths/188-ingenieur-ia" target="_blank">"Ingénieur IA" d'OpenClassroom.</a>
+        <br> Voici le contexte de ce projet:<br>
+        "Vous êtes Ingénieur IA au sein de la startup “Avis Restau”, qui met en relation des clients et des restaurants.
+    </p>
+        <img src="{{ url_for('static', filename='img/logo.png') }}" width="400px" style="margin: 20px;">
+    <p>
+        Votre entreprise souhaite améliorer sa plateforme avec une nouvelle fonctionnalité de collaboration. Les utilisateurs pourront par exemple poster des avis et des photos sur leur restaurant préféré. Ce sera aussi l’occasion, pour l’entreprise, de mieux comprendre les avis postés par les utilisateurs."
+        <br><br>
+        <div class="alert alert-warning" role="alert">
+           [A Completer...]
+        </div>
+    </p>
+    <h2>A propos de moi :</h2>
+    <p>
+        <div class="alert alert-warning" role="alert">
+            [A Completer...]
+         </div>
+        
+    </p>
+</div>
+
+{%endblock%}
+
+
+
+
+
+{% block script %}
+
+{%endblock%}

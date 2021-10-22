@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block head %} 
+
+<style>
+    body { background-color: #30303d; color: #fff; }
+    .jumbotron{ color:black;}
+</style>
+
+{%endblock%}
+
+
+
+
+
+{% block body %}
+
+<div class="container-fluid">
+    <h1>Topic modeling</h1>
+
+    <form method="post" >
+        <div class="form-group">
+            <label for="inputReview">Ecrire un commentaire (anglais)</label>
+            <input type="text" name="review" class="form-control" id="inputReview" placeholder="Mettre un commentaire ici">
+        </div>
+        <div class="form-check">
+            <input type="checkbox" name="globalTopic" class="form-check-input" id="userGlobalTopic">
+            <label class="form-check-label" for="userGlobalTopic">Utiliser les topics global (topic global ou avec les sous-sujet)</label>
+          </div>
+        <button type="submit" class="btn btn-primary">Soumettre</button>
+    </form>
+    <br><br>
+    {% if sended == True %}
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+        <h1 class="display-4">Répartition des topics :</h1>
+        <p class="lead">
+            {{sentence}}<br><br>
+            {% for k,v in result.items(): %}
+                <b>{{k}}</b> -> {{v}}<br>
+            {% endfor %}
+        </p>
+        </div>
+    </div>
+    {% endif %}
+
+</div>
+
+{%endblock%}
+
+
+
+
+
+{% block script %}
+
+
+{%endblock%}
