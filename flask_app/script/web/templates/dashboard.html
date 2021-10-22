@@ -6,7 +6,7 @@
     body { background-color: #30303d; color: #fff; }
     #wordcloud{
         width: 100%;
-        height: 500px;
+        height: 400px;
     }
 
     #bar_nlp {
@@ -23,9 +23,13 @@
 {%endblock%}
 
 {% block body %}
-<h1>Nuage de mots d'un échantillion de mauvais commentaires</h1>
-<div id="wordcloud"></div>
 <div class="container-fluid" style="width: 100%;">
+    <div class="row">
+        <div class="col-12">
+            <h3>Nuage de mots d'un échantillion de mauvais commentaires</h3>
+            <div id="wordcloud"></div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-12 col-lg-6">
             <h3>Impact total (matrice TF-IDF) des mots sur 100.000 reviews</h3>
