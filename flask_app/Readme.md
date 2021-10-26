@@ -7,7 +7,7 @@ This project will allow the implementation of automatic classification algorithm
 Dashboard made with de Flask + AmChart (click image to run)
 <p align="center">
 	<a href="https://avis-restau-oc.herokuapp.com/"> 
-		<img src="https://github.com/Seb-IX/Projet_6/blob/main/Solution/script/img/dashboard.jpg">
+		<img src="https://github.com/Seb-IX/Projet_6/blob/main/Solution/script/img/dashboard.JPG">
 	</a>
 </p>
 
