@@ -8,6 +8,10 @@
 	This directory contains ressources to helped or needed for the project</li>
 <li>/Solution/ :<br>
 	This directory contains the solution and the final test submitted to the jury to validate my project.</li>
+<li>/dashboard_voila/ :<br>
+	This directory contains the dashboard made with package Voilà.</li>
+<li>/flask_app/ :<br>
+	This directory contains the dashboard made with Flask + AmChart.</li>
 </ul>	
 
 **By TUCCIO Sébastien**
