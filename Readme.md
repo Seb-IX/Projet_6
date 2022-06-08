@@ -1,17 +1,11 @@
-# Projet configuration
-<ul>
-<li>/Enoncé/ :<br>
-	This directory contains statement for project in french</li>
-<li>/Présentation/ :<br>
-	This directory contains my powerpoint for jury to validated my project</li>
-<li>/Ressource/ :<br>
-	This directory contains ressources to helped or needed for the project</li>
-<li>/Solution/ :<br>
-	This directory contains the solution and the final test submitted to the jury to validate my project.</li>
-<li>/dashboard_voila/ :<br>
-	This directory contains the dashboard made with package Voilà.</li>
-<li>/flask_app/ :<br>
-	This directory contains the dashboard made with Flask + AmChart.</li>
-</ul>	
+# Project "Avis Restau"
 
-**By TUCCIO Sébastien**
+<p align="center">
+	<img src="https://github.com/Seb-IX/Projet_6/blob/main/Solution/script/img/logo.png" style="width:600px;">
+</p>
+
+The company Avis Restau connects customers and restaurants. The company wishes to realize 2 new collaborative features:
+- The implementation of a tool for automatic classification of images
+- A tool to detect the topics of unsatisfaction of the comments posted on the platform
+
+> You will find the details of this project in the "/Solution/" folder

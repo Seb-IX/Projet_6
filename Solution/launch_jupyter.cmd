@@ -1,1 +1,0 @@
-CALL docker-compose up -d
